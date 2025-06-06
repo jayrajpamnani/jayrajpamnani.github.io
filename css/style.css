@@ -142,7 +142,10 @@ body {
 
 .profile-image {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
+  aspect-ratio: 1 / 1;
   animation: bounce 1s infinite alternate;
 }
 
