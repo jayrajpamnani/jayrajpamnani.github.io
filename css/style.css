@@ -144,6 +144,7 @@ body {
   width: 150px;
   height: 150px;
   object-fit: cover;
+  object-position: center center;
   border-radius: 50%;
   aspect-ratio: 1 / 1;
   animation: bounce 1s infinite alternate;
@@ -160,11 +161,25 @@ body {
 }
 
 .division {
-  width: 100%;
-  height: 2px;
-  background-color: var(--card-background);
-  margin: 5.5rem 0;
+  display: none;
 }
+
+#certifications {
+  margin-bottom: 1.5rem;
+}
+
+#projects {
+  margin-top: 1.5rem;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
 /* Projects */
 #projects {
   display: flex;
@@ -452,4 +467,18 @@ body {
   border-radius: 15px;
   font-size: 0.8rem;
   border: 1px solid var(--border-color);
+}
+
+.project-list a {
+  font-weight: bold;
+  color: #1565c0;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.project-list a:hover {
+  color: #0d47a1;
+  background: #e3f2fd;
+  border-radius: 4px;
+  text-decoration: underline;
 }
