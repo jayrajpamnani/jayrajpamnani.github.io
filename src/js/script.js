@@ -65,3 +65,33 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
+
+// Fetch and display GitHub repositories
+fetch('https://api.github.com/users/jayrajpamnani/repos')
+  .then(response => response.json())
+  .then(repos => {
+    const projectsContainer = document.getElementById('github-projects');
+    if (!projectsContainer) return;
+    repos.forEach(repo => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <div class="project-info">
+          <div class="project-bio">
+            <h3>${repo.name}</h3>
+            <p>${repo.description ? repo.description : ''}</p>
+          </div>
+          <div class="project-link">
+            <a href="${repo.html_url}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      `;
+      projectsContainer.appendChild(card);
+    });
+  })
+  .catch(error => {
+    const projectsContainer = document.getElementById('github-projects');
+    if (projectsContainer) {
+      projectsContainer.innerHTML = '<p>Unable to load projects from GitHub at this time.</p>';
+    }
+  });
