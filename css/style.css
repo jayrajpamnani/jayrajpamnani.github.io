@@ -175,35 +175,28 @@ body {
 }
 
 .project {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(250px, auto);
-  grid-gap: 0.9rem;
-}
-
-.card .project-bio p {
-  font-size: 0.83rem;
-}
-
-.card .project-bio h3 {
-  font-size: 0.9rem;
-}
-
-.project-info {
-  display: flex;
-  justify-content: space-between;
-  opacity: 0;
-  position: relative;
-  transition: 0.5s ease-in-out;
-}
-
-.project-bio {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  top: 160px;
-  left: 10px;
+  gap: 1.2rem;
+}
+
+.project-title-link {
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.project-title-link h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-color);
+}
+
+.project-title-link a {
+  font-size: 0.9rem;
+  color: #0077b5;
+  text-decoration: underline;
 }
 
 /* Footer */
