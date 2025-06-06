@@ -74,7 +74,7 @@ async function fetchGitHubRepos() {
   try {
     const response = await fetch('https://api.github.com/users/jayrajpamnani/repos', {
       headers: {
-        'Accept': 'application/vnd.github.v3+json'
+        'Accept': 'application/vnd.github+json'
       }
     });
 
@@ -130,6 +130,15 @@ async function fetchGitHubRepos() {
       
       projectsContainer.appendChild(projectDiv);
     });
+
+    // Debug: Show raw JSON on the page for troubleshooting
+    const debugDiv = document.createElement('pre');
+    debugDiv.style.background = '#f8f8f8';
+    debugDiv.style.color = '#333';
+    debugDiv.style.fontSize = '0.8rem';
+    debugDiv.style.overflowX = 'auto';
+    debugDiv.textContent = JSON.stringify(repos, null, 2);
+    projectsContainer.appendChild(debugDiv);
   } catch (error) {
     console.error('Error fetching GitHub projects:', error);
     projectsContainer.innerHTML = `
