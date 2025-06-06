@@ -68,10 +68,18 @@ myDate.innerHTML = yes;
 
 // Fetch and display GitHub repositories
 fetch('https://api.github.com/users/jayrajpamnani/repos')
-  .then(response => response.json())
+  .then(response => {
+    console.log('GitHub API response status:', response.status);
+    return response.json();
+  })
   .then(repos => {
     const projectsContainer = document.getElementById('github-projects');
     if (!projectsContainer) return;
+    if (!Array.isArray(repos) || repos.length === 0) {
+      console.log('No repositories found or API returned an empty array:', repos);
+      projectsContainer.innerHTML = '<p>No public projects found.</p>';
+      return;
+    }
     repos.forEach(repo => {
       const projectDiv = document.createElement('div');
       projectDiv.className = 'project-title-link';
@@ -87,4 +95,5 @@ fetch('https://api.github.com/users/jayrajpamnani/repos')
     if (projectsContainer) {
       projectsContainer.innerHTML = '<p>Unable to load projects from GitHub at this time.</p>';
     }
+    console.error('Error fetching GitHub projects:', error);
   });
