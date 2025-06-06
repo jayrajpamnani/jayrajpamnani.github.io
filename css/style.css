@@ -181,22 +181,57 @@ body {
 }
 
 .project-title-link {
-  padding: 0.5rem 0;
-  background: none;
-  border: none;
-  box-shadow: none;
+  background: var(--card-background);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-title-link:hover {
+  transform: translateY(-5px);
 }
 
 .project-title-link h3 {
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
   color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
 }
 
-.project-title-link a {
+.project-title-link p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
   font-size: 0.9rem;
-  color: #0077b5;
-  text-decoration: underline;
+}
+
+.repo-stats {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.repo-stats span {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.repo-stats i {
+  color: var(--primary-color);
+}
+
+.project-title-link .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.project-title-link .btn i {
+  font-size: 0.8rem;
 }
 
 /* Footer */
@@ -366,4 +401,52 @@ body {
 #certifications,
 #projects {
   scroll-margin-top: 90px;
+}
+
+/* GitHub Projects Styling */
+.project-item {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+.project-item h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.project-item h3 a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-item h3 a:hover {
+  color: var(--primary-color);
+}
+
+.project-item p {
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.project-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.topic-tag {
+  background: var(--card-background);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  border: 1px solid var(--border-color);
 }

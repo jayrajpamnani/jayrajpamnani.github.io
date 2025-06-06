@@ -67,33 +67,77 @@ const yes = new Date().getFullYear();
 myDate.innerHTML = yes;
 
 // Fetch and display GitHub repositories
-fetch('https://api.github.com/users/jayrajpamnani/repos')
-  .then(response => {
-    console.log('GitHub API response status:', response.status);
-    return response.json();
-  })
-  .then(repos => {
-    const projectsContainer = document.getElementById('github-projects');
-    if (!projectsContainer) return;
+async function fetchGitHubRepos() {
+  const projectsContainer = document.getElementById('github-projects');
+  if (!projectsContainer) return;
+
+  try {
+    const response = await fetch('https://api.github.com/users/jayrajpamnani/repos', {
+      headers: {
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    });
+
+    // Check for rate limiting
+    if (response.status === 403) {
+      const resetTime = response.headers.get('X-RateLimit-Reset');
+      const resetDate = new Date(resetTime * 1000);
+      projectsContainer.innerHTML = `<p>GitHub API rate limit exceeded. Please try again after ${resetDate.toLocaleTimeString()}</p>`;
+      return;
+    }
+
+    if (!response.ok) {
+      throw new Error(`GitHub API responded with status: ${response.status}`);
+    }
+
+    const repos = await response.json();
+    
     if (!Array.isArray(repos) || repos.length === 0) {
-      console.log('No repositories found or API returned an empty array:', repos);
       projectsContainer.innerHTML = '<p>No public projects found.</p>';
       return;
     }
+
+    // Sort repos by most recently updated
+    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
+    // Clear existing content
+    projectsContainer.innerHTML = '';
+
+    // Display repos in text format
     repos.forEach(repo => {
       const projectDiv = document.createElement('div');
-      projectDiv.className = 'project-title-link';
+      projectDiv.className = 'project-item';
+      
+      // Create project title and link
+      const titleLink = document.createElement('h3');
+      titleLink.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+      
+      // Create description paragraph
+      const description = document.createElement('p');
+      description.textContent = repo.description || 'No description available';
+      
+      // Create topics/tags if available
+      let topicsHtml = '';
+      if (repo.topics && repo.topics.length > 0) {
+        topicsHtml = `<div class="project-topics">${repo.topics.map(topic => `<span class="topic-tag">${topic}</span>`).join(' ')}</div>`;
+      }
+      
       projectDiv.innerHTML = `
-        <h3>${repo.name}</h3>
-        <a href="${repo.html_url}" target="_blank" style="font-size:0.9rem; color:#0077b5; text-decoration:underline;">View on GitHub</a>
+        <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+        <p>${repo.description || 'No description available'}</p>
+        ${topicsHtml}
       `;
+      
       projectsContainer.appendChild(projectDiv);
     });
-  })
-  .catch(error => {
-    const projectsContainer = document.getElementById('github-projects');
-    if (projectsContainer) {
-      projectsContainer.innerHTML = '<p>Unable to load projects from GitHub at this time.</p>';
-    }
+  } catch (error) {
     console.error('Error fetching GitHub projects:', error);
-  });
+    projectsContainer.innerHTML = `
+      <p>Unable to load projects from GitHub at this time.</p>
+      <p>Error: ${error.message}</p>
+    `;
+  }
+}
+
+// Call the function when the page loads
+document.addEventListener('DOMContentLoaded', fetchGitHubRepos);
