@@ -73,20 +73,13 @@ fetch('https://api.github.com/users/jayrajpamnani/repos')
     const projectsContainer = document.getElementById('github-projects');
     if (!projectsContainer) return;
     repos.forEach(repo => {
-      const card = document.createElement('div');
-      card.className = 'card';
-      card.innerHTML = `
-        <div class="project-info">
-          <div class="project-bio">
-            <h3>${repo.name}</h3>
-            <p>${repo.description ? repo.description : ''}</p>
-          </div>
-          <div class="project-link">
-            <a href="${repo.html_url}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          </div>
-        </div>
+      const projectDiv = document.createElement('div');
+      projectDiv.className = 'project-title-link';
+      projectDiv.innerHTML = `
+        <h3>${repo.name}</h3>
+        <a href="${repo.html_url}" target="_blank" style="font-size:0.9rem; color:#0077b5; text-decoration:underline;">View on GitHub</a>
       `;
-      projectsContainer.appendChild(card);
+      projectsContainer.appendChild(projectDiv);
     });
   })
   .catch(error => {
