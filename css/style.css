@@ -590,9 +590,20 @@ body {
 /* Strengths and Weaknesses Section */
 .sw-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  scroll-margin-top: 2rem;
+}
+
+.sw-card {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .strengths, .weaknesses {
