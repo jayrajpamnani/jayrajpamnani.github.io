@@ -324,6 +324,7 @@ body {
 @media (max-width: 768px) {
   .sw-container {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .announcement-bar {
@@ -337,6 +338,21 @@ body {
 
   .project-card, .strengths, .weaknesses {
     padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement-bar {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .sw-container {
+    gap: 1rem;
+  }
+
+  .strengths, .weaknesses {
+    padding: 1.2rem;
   }
 }
 
