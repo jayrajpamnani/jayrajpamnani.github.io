@@ -207,8 +207,8 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 .project-card {
@@ -253,7 +253,7 @@ body {
 .see-all-projects {
   display: block;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .see-all-projects .btn {
@@ -264,11 +264,20 @@ body {
   text-transform: uppercase;
   font-size: 0.82rem;
   transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: var(--weight-semibold);
 }
 
 .see-all-projects .btn:hover {
   background: var(--secondary-color);
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.see-all-projects .btn i {
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
 }
 
 /* Footer */
