@@ -206,17 +206,18 @@ body {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 2rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2rem;
 }
 
 .project-card {
   background: var(--card-background);
-  padding: 1.25rem;
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -354,12 +355,13 @@ body {
   }
 
   .projects-container {
-    grid-template-columns: 1fr;
-    max-width: 350px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .project-card {
-    height: 250px;
+    height: 280px;
   }
 }
 
@@ -378,11 +380,12 @@ body {
   }
 
   .projects-container {
-    grid-template-columns: 250px;
+    grid-template-columns: 1fr;
+    max-width: 350px;
+    padding: 0;
   }
 
   .project-card {
-    width: 250px;
     height: 250px;
   }
 }
