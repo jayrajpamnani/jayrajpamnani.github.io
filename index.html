@@ -89,6 +89,7 @@
             <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
             <li><a class="nav-link" href="#certifications">CERTIFICATIONS</a></li>
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="#other">OTHER</a></li>
             <li>
               <a
                 class="nav-link btn btn-primary"
@@ -159,60 +160,6 @@
           </p>
         </div>
       </section>
-      <!-- Strengths and Weaknesses Section -->
-      <section id="strengths-weaknesses" class="container">
-        <div class="content-text">
-          <h2>Strengths and Weaknesses</h2>
-          <div class="sw-container">
-            <div class="strengths">
-              <h3>Strengths</h3>
-              <ul>
-                <li>I enjoy building creative and useful things, from ML models to full products</li>
-                <li>I like solving tough problems using AI, data, and smart logic</li>
-                <li>I focus deeply on one task at a time and see it through</li>
-                <li>I stay curious and constantly try to improve my skills</li>
-              </ul>
-            </div>
-            <div class="weaknesses">
-              <h3>Weaknesses</h3>
-              <ul>
-                <li>I sometimes focus too much on one task, which makes context switching hard</li>
-                <li>I can be a perfectionist and spend extra time refining small details</li>
-                <li>I often take on too much solo and delay asking for feedback or help</li>
-                <li>I sometimes jump into solving problems too quickly without fully exploring them</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Hobbies Section -->
-      <section id="hobbies" class="container">
-        <div class="content-text">
-          <h2>Hobbies</h2>
-          <div class="hobbies-container">
-            <div class="hobby-card">
-              <i class="fas fa-puzzle-piece"></i>
-              <h3>Playing Sudoku</h3>
-              <p>Master level on the Sudoku.com app</p>
-            </div>
-            <div class="hobby-card">
-              <i class="fas fa-bicycle"></i>
-              <h3>Cycling</h3>
-              <p>To relax and stay active</p>
-            </div>
-            <div class="hobby-card">
-              <i class="fas fa-film"></i>
-              <h3>Watching Movies</h3>
-              <p>Mostly comedy and inspiring ones</p>
-            </div>
-            <div class="hobby-card">
-              <i class="fas fa-laugh-squint"></i>
-              <h3>Memes</h3>
-              <p>Yes, including dank ones</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- Education Section -->
       <section id="education" class="education-container container">
         <div class="content-text">
@@ -271,55 +218,100 @@
       </section>
     </header>
 
-    <!-- Projects -->
-    <section id="projects" class="project-container container">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-container container">
       <div class="content-text">
         <h2>Projects</h2>
-        <p>Check out some of my personal and academic projects below.</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Command Line Helper</h3>
+            <p>Converts natural language to bash commands using a local LLM and RAG-powered context, with both CLI and web interface.</p>
+            <a href="https://github.com/jayrajpamnani/command-line-helper" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <h3>AnimeGAN</h3>
+            <p>The goal of this project is to create anime-style faces using a Deep Convolutional Generative Adversarial Network (DCGAN) implemented with Keras and TensorFlow on Kaggle Notebook.</p>
+            <a href="https://github.com/jayrajpamnani/AnimeGAN" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <h3>HexDrop</h3>
+            <p>File delivery web app which helps users to share files across devices with end to end encryption.</p>
+            <a href="https://github.com/jayrajpamnani/HexDrop" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <h3>AIQuizzer</h3>
+            <p>Wrapper around Gemini gemini-2.0-flash model which generates quizzes from the given pdf.</p>
+            <a href="https://github.com/jayrajpamnani/AIQuizzer" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <h3>Chapter</h3>
+            <p>CS-GY 6083 PDS Project.</p>
+            <a href="https://github.com/jayrajpamnani/Chapter" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="project-card">
+            <h3>Synthetic Data Generation</h3>
+            <p>Development of a Generative Adversarial Network (GAN) model to produce synthetic app usage data, maintaining statistical properties of the original dataset maintaining data privacy.</p>
+            <a href="https://github.com/jayrajpamnani/Synthetic-Data-Generation" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <a href="https://github.com/jayrajpamnani?tab=repositories" class="btn btn-secondary" target="_blank">See All on GitHub <i class="fas fa-arrow-right"></i></a>
       </div>
-      <article class="project-list">
-        <div class="project-text-item">
-          <h3>Command Line Helper - Natural Language to Bash Command Converter</h3>
-          <p>Converts natural language to bash commands using a local LLM and RAG-powered context, with both CLI and web interface.</p>
-          <a href="https://github.com/jayrajpamnani/CommandLineHelper" target="_blank">View on GitHub</a>
+    </section>
+
+    <!-- Strengths and Weaknesses Section -->
+    <section id="other" class="container">
+      <div class="content-text">
+        <h2>Strengths and Weaknesses</h2>
+        <div class="sw-container">
+          <div class="strengths">
+            <h3>Strengths</h3>
+            <ul>
+              <li>I enjoy building creative and useful things, from ML models to full products</li>
+              <li>I like solving tough problems using AI, data, and smart logic</li>
+              <li>I focus deeply on one task at a time and see it through</li>
+              <li>I stay curious and constantly try to improve my skills</li>
+            </ul>
+          </div>
+          <div class="weaknesses">
+            <h3>Weaknesses</h3>
+            <ul>
+              <li>I sometimes focus too much on one task, which makes context switching hard</li>
+              <li>I can be a perfectionist and spend extra time refining small details</li>
+              <li>I often take on too much solo and delay asking for feedback or help</li>
+              <li>I sometimes jump into solving problems too quickly without fully exploring them</li>
+            </ul>
+          </div>
         </div>
-        <div class="project-text-item">
-          <h3>AnimeGAN</h3>
-          <p>The goal of this project is to create anime-style faces using a Deep Convolutional Generative Adversarial Network (DCGAN) implemented with Keras and TensorFlow on Kaggle Notebook.</p>
-          <a href="https://github.com/jayrajpamnani/AnimeGAN" target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="container">
+      <div class="content-text">
+        <h2>Hobbies</h2>
+        <div class="hobbies-container">
+          <div class="hobby-card">
+            <i class="fas fa-puzzle-piece"></i>
+            <h3>Playing Sudoku</h3>
+            <p>Master level on the Sudoku.com app</p>
+          </div>
+          <div class="hobby-card">
+            <i class="fas fa-bicycle"></i>
+            <h3>Cycling</h3>
+            <p>To relax and stay active</p>
+          </div>
+          <div class="hobby-card">
+            <i class="fas fa-film"></i>
+            <h3>Watching Movies</h3>
+            <p>Mostly comedy and inspiring ones</p>
+          </div>
+          <div class="hobby-card">
+            <i class="fas fa-laugh-squint"></i>
+            <h3>Memes</h3>
+            <p>Yes, including dank ones</p>
+          </div>
         </div>
-        <div class="project-text-item">
-          <h3>HexDrop</h3>
-          <p>File delivery web app which helps users to share files across devices with end to end encryption.</p>
-          <a href="https://github.com/jayrajpamnani/HexDrop" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-text-item">
-          <h3>AIQuizzer</h3>
-          <p>Wrapper around Gemini gemini-2.0-flash model which generates quizzes from the given pdf.</p>
-          <a href="https://github.com/jayrajpamnani/AIQuizzer" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-text-item">
-          <h3>Chapter</h3>
-          <p>CS-GY 6083 PDS Project.</p>
-          <a href="https://github.com/jayrajpamnani/Chapter" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-text-item">
-          <h3>Synthetic Data Generation Using Generative AI</h3>
-          <p>Development of a Generative Adversarial Network (GAN) model to produce synthetic app usage data, maintaining statistical properties of the original dataset maintaining data privacy.</p>
-          <a href="https://github.com/jayrajpamnani/Synthetic-Data-Generation-Using-Generative-AI" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-text-item">
-          <h3>Automated Data Pipeline for Music Streaming Analytics with Apache Airflow</h3>
-          <p>Design and implementation of an ETL pipeline for a Music streaming website's data warehouse using Apache Airflow, automating the ingestion of user activity and song metadata from AWS S3 to Amazon R…</p>
-          <a href="https://github.com/jayrajpamnani/Automated-Data-Pipeline-for-Music-Streaming-Analytics-with-Apache-Airflow" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-text-item">
-          <h3>Document Analysis Using Large Language Models LLMswithPython</h3>
-          <p>Extraction of text from PDFs using pdfplumber and summarization of content with pre-trained models like T5-small, enhancing document comprehension.</p>
-          <a href="https://github.com/jayrajpamnani/Document-Analysis-Using-Large-Language-Models-LLMs-with-Python" target="_blank">View on GitHub</a>
-        </div>
-      </article>
-      <a href="https://github.com/jayrajpamnani?tab=repositories" class="btn btn-secondary" target="_blank">See All on GitHub <i class="fas fa-arrow-right"></i></a>
+      </div>
     </section>
 
     <footer id="footer">
