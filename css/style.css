@@ -497,16 +497,24 @@ body {
   /* background: url(../assets/project/project-six.png) center center/cover; */
 }
 
-/* Anchor scroll offset for fixed navbar */
+/* Update scroll margin for all sections */
 #about,
 #education,
 #skills,
 #experience,
 #certifications,
 #projects,
-#other,
-#strengths-weaknesses {
-  scroll-margin-top: 100px;
+#other {
+  scroll-margin-top: 120px;
+}
+
+/* Add specific styling for the Other section */
+#other {
+  padding-top: 2rem;
+}
+
+#other h2 {
+  margin-bottom: 2rem;
 }
 
 /* GitHub Projects Styling */
