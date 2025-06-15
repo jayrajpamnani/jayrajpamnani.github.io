@@ -343,6 +343,7 @@ body {
   .sw-container {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    padding: 0 1rem;
   }
 
   .announcement-bar {
@@ -359,6 +360,18 @@ body {
   .project-card {
     height: 280px;
   }
+
+  .strengths, .weaknesses {
+    padding: 1.2rem;
+  }
+
+  .content-text {
+    padding: 0 1rem;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -368,7 +381,9 @@ body {
   }
 
   .sw-container {
+    grid-template-columns: 1fr;
     gap: 1rem;
+    padding: 0;
   }
 
   .strengths, .weaknesses {
@@ -383,6 +398,26 @@ body {
 
   .project-card {
     height: 250px;
+  }
+
+  .content-text {
+    padding: 0;
+  }
+
+  .header-container {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  #other {
+    padding-top: 1rem;
+  }
+
+  #other h2 {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -601,50 +636,31 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  scroll-margin-top: 2rem;
-}
-
-.sw-card {
-  background: var(--card-background);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
 }
 
 .strengths, .weaknesses {
   background: var(--card-background);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .strengths h3, .weaknesses h3 {
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .strengths ul, .weaknesses ul {
-  list-style-type: none;
+  list-style: none;
+  padding: 0;
 }
 
 .strengths li, .weaknesses li {
-  margin-bottom: 1rem;
-  position: relative;
-  padding-left: 1.5rem;
-}
-
-.strengths li:before, .weaknesses li:before {
-  content: "•";
-  color: var(--primary-color);
-  position: absolute;
-  left: 0;
-  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 /* Hobbies Section */
