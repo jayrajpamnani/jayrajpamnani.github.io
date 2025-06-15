@@ -108,6 +108,23 @@ body {
   width: 64px;
 }
 
+/* Logo styles for light/dark mode */
+.light-mode-logo {
+  display: block;
+}
+
+.dark-mode-logo {
+  display: none;
+}
+
+[data-theme="dark"] .light-mode-logo {
+  display: none;
+}
+
+[data-theme="dark"] .dark-mode-logo {
+  display: block;
+}
+
 .navbar .btn {
   margin-right: 1.5rem;
 }
