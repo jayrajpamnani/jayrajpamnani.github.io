@@ -205,13 +205,10 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 2rem auto;
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0 2rem;
 }
 
@@ -222,7 +219,6 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -507,8 +503,10 @@ body {
 #skills,
 #experience,
 #certifications,
-#projects {
-  scroll-margin-top: 90px;
+#projects,
+#other,
+#strengths-weaknesses {
+  scroll-margin-top: 100px;
 }
 
 /* GitHub Projects Styling */
