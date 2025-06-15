@@ -205,8 +205,8 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
   margin-top: 4rem;
   margin-bottom: 4rem;
   max-width: 1200px;
@@ -216,7 +216,7 @@ body {
 
 .project-card {
   background: var(--card-background);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -234,24 +234,26 @@ body {
 
 .project-card h3 {
   color: var(--text-color);
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
 }
 
 .project-card p {
   color: var(--text-color);
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
   opacity: 0.9;
   flex-grow: 1;
+  line-height: 1.4;
 }
 
 .project-card .btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-top: auto;
+  padding: 0.5rem 1rem;
 }
 
 .project-card .btn i {
@@ -351,12 +353,12 @@ body {
   }
 
   .projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.25rem;
   }
 
   .project-card {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 }
 
@@ -380,7 +382,7 @@ body {
 
   .project-card {
     aspect-ratio: auto;
-    min-height: 250px;
+    min-height: 200px;
   }
 }
 
