@@ -666,8 +666,12 @@ body {
   color: var(--text-color);
   font-size: 0.8rem;
   font-style: italic;
-  margin-bottom: 1rem;
+  font-weight: bold;
+  margin-top: -0.3rem;
+  margin-bottom: 0.7rem;
   opacity: 0.8;
+  display: block;
+  text-align: center;
 }
 
 .strengths ul, .weaknesses ul {
