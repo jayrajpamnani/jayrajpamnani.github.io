@@ -175,3 +175,11 @@ h2::selection {
     font-size: 2.5rem;
   }
 }
+
+/* Fix for Professional Experience tile alignment */
+#experience .content-text {
+  text-align: left;
+}
+#experience .experience-tiles {
+  justify-content: flex-start;
+}
