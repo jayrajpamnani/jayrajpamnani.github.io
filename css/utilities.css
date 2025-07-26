@@ -95,12 +95,61 @@ h2::selection {
   font-size: 3rem;
   line-height: 1.2;
   transition: 0.2s ease-in-out;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .content-text p {
   padding: 0.5rem;
   margin: 0 auto;
   max-width: 700px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.content-text ul {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+}
+
+.content-text li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Education section specific styling */
+.education-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.education-item h3 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.education-item p {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.education-item p:last-child {
+  margin-bottom: 0;
 }
 
 /* Project cards */
@@ -173,5 +222,20 @@ h2::selection {
 
   .content-text h2 {
     font-size: 2.5rem;
+  }
+  
+  .content-text p {
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  
+  .content-text ul {
+    max-width: 100%;
+    padding-left: 1rem;
+  }
+  
+  .education-item {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
   }
 }

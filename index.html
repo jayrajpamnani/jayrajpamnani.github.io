@@ -69,7 +69,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
-  <body>
+  <body class="no-js">
     <header id="hero">
       <!-- Navbar -->
       <nav class="navbar">
@@ -84,9 +84,9 @@
           <!-- Navbar links -->
           <ul class="nav-menu">
             <li><a class="nav-link" href="#about">ABOUT</a></li>
-            <li><a class="nav-link" href="#education">EDUCATION</a></li>
             <li><a class="nav-link" href="#skills">SKILLS</a></li>
             <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+            <li><a class="nav-link" href="#education">EDUCATION</a></li>
             <li><a class="nav-link" href="#certifications">CERTIFICATIONS</a></li>
             <li><a class="nav-link" href="#projects">PROJECTS</a></li>
             <li><a class="nav-link" href="#other">OTHER</a></li>
@@ -129,11 +129,7 @@
         <h1>Hello!! I'm Jayraj Pamnani</h1>
 
         <div class="content-text">
-          <h2>Data Science/AI Enthusiast</h2>
-
-          <p>
-            MS Computer Engineering @ NYU | Machine Learning | Neural Networks | R | PyTorch | Database Design | Spark | HDFS
-          </p>
+          <h2 class="typing-text">Data Science/AI Enthusiast</h2>
         </div>
         <div class="social-links">
           <a href="mailto:jmp10051@nyu.edu" title="Email"><i class="fas fa-envelope"></i></a>
@@ -161,22 +157,6 @@
           </p>
         </div>
       </section>
-      <!-- Education Section -->
-      <section id="education" class="education-container container">
-        <div class="content-text">
-          <h2>Education</h2>
-          <div class="education-item">
-            <h3>New York University</h3>
-            <p><strong>Master's in Computer Engineering</strong> | New York, NY | Expected May 2026</p>
-            <p><em>Relevant Coursework:</em> Machine Learning, Principles of Database Systems, Applied Matrix Theory, Real Time Embedded Systems, Big Data and Computing Systems & Architecture</p>
-          </div>
-          <div class="education-item">
-            <h3>Parul University</h3>
-            <p><strong>Bachelor's in Computer Science & Engineering with Specialization in AI</strong> | Vadodara, India | May 2024</p>
-            <p><em>Relevant Coursework:</em> Data Structures & Algorithms, Machine Learning, Deep Learning with NLP, Pattern Recognition, Image Processing, GPU Computing, Data Visualization and Data Analytics</p>
-          </div>
-        </div>
-      </section>
       <!-- Skills Section -->
       <section id="skills" class="skills-container container">
         <div class="content-text">
@@ -196,7 +176,8 @@
         <div class="content-text">
           <h2>Professional Experience</h2>
           <div class="experience-cards">
-            <div class="experience-card">
+            <div class="experience-card enhanced-card fade-in">
+              <i class="fas fa-robot"></i>
               <h3>Swaroop.ai - AI Intern</h3>
               <div class="exp-meta">
                 <span class="exp-location">Ahmedabad, India</span> |
@@ -208,7 +189,8 @@
                 <li>Additionally, I implemented OpenAI Whisper, a transformer-based ASR system to achieve accurate, noise-resilient transcriptions and multilingual speech translation. Through these projects, I gained hands-on experience in end-to-end model development, from data preprocessing and model training to evaluation and production deployment.</li>
               </ul>
             </div>
-            <div class="experience-card">
+            <div class="experience-card enhanced-card fade-in">
+              <i class="fas fa-chart-line"></i>
               <h3>Robotskull - Data Scientist Intern</h3>
               <div class="exp-meta">
                 <span class="exp-location">Vadodara, India</span> |
@@ -221,7 +203,8 @@
                 <li>Visualization and reporting: Created dashboards and visual summaries that helped the procurement team prioritize high-demand SKUs and optimize inventory.</li>
               </ul>
             </div>
-            <div class="experience-card">
+            <div class="experience-card enhanced-card fade-in">
+              <i class="fas fa-code"></i>
               <h3>Freelance Software Developer</h3>
               <div class="exp-meta">
                 <span class="exp-location">Vadodara, India</span> |
@@ -233,8 +216,9 @@
                 <li>Implemented multiple client-specified verification checkpoints to ensure accuracy and data integrity before syncing to KatanaMRP via API. Deployed the application securely on an AWS EC2 instance, ensuring reliability and availability.</li>
               </ul>
             </div>
-            <div class="experience-card">
-              <h3>Parul University - Teaching Assistant for Operating Systems Course</h3>
+            <div class="experience-card enhanced-card fade-in">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <h3>Parul University - Teaching Assistant</h3>
               <div class="exp-meta">
                 <span class="exp-location">Vadodara, India</span> |
                 <span class="exp-date">Oct. 2022 - Mar. 2023</span>
@@ -244,6 +228,22 @@
                 <li>Conducted weekly lab sessions, clarified student doubts, graded assignments and projects, and supported students in understanding Linux system programming and multithreading using C.</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- Education Section -->
+      <section id="education" class="education-container container">
+        <div class="content-text">
+          <h2>Education</h2>
+          <div class="education-item">
+            <h3>New York University</h3>
+            <p><strong>Master's in Computer Engineering</strong> | New York, NY | Expected May 2026</p>
+            <p><em>Relevant Coursework:</em> Machine Learning, Principles of Database Systems, Applied Matrix Theory, Real Time Embedded Systems, Big Data and Computing Systems & Architecture</p>
+          </div>
+          <div class="education-item">
+            <h3>Parul University</h3>
+            <p><strong>Bachelor's in Computer Science & Engineering with Specialization in AI</strong> | Vadodara, India | May 2024</p>
+            <p><em>Relevant Coursework:</em> Data Structures & Algorithms, Machine Learning, Deep Learning with NLP, Pattern Recognition, Image Processing, GPU Computing, Data Visualization and Data Analytics</p>
           </div>
         </div>
       </section>
@@ -268,32 +268,32 @@
       <div class="content-text">
         <h2>Projects</h2>
         <div class="projects-container">
-          <div class="project-card">
+          <div class="project-card enhanced-card fade-in">
             <h3>Command Line Helper</h3>
             <p>Converts natural language to bash commands using a local LLM and RAG-powered context, with both CLI and web interface.</p>
             <a href="https://github.com/jayrajpamnani/CommandLineHelper" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="project-card">
+          <div class="project-card enhanced-card fade-in">
             <h3>AnimeGAN</h3>
             <p>The goal of this project is to create anime-style faces using a Deep Convolutional Generative Adversarial Network (DCGAN) implemented with Keras and TensorFlow on Kaggle Notebook.</p>
             <a href="https://github.com/jayrajpamnani/AnimeGAN" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="project-card">
+          <div class="project-card enhanced-card fade-in">
             <h3>HexDrop</h3>
             <p>File delivery web app which helps users to share files across devices with end to end encryption.</p>
             <a href="https://github.com/jayrajpamnani/HexDrop" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="project-card">
+          <div class="project-card enhanced-card fade-in">
             <h3>AIQuizzer</h3>
             <p>Wrapper around Gemini gemini-2.0-flash model which generates quizzes from the given pdf.</p>
             <a href="https://github.com/jayrajpamnani/AIQuizzer" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="project-card">
+          <div class="project-card enhanced-card fade-in">
             <h3>Chapter</h3>
             <p>CS-GY 6083 PDS Project.</p>
             <a href="https://github.com/jayrajpamnani/Chapter" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
           </div>
-          <div class="project-card">
+          <div class="project-card enhanced-card fade-in">
             <h3>Synthetic Data Generation</h3>
             <p>Development of a Generative Adversarial Network (GAN) model to produce synthetic app usage data, maintaining statistical properties of the original dataset maintaining data privacy.</p>
             <a href="https://github.com/jayrajpamnani/Synthetic-Data-Generation-Using-Generative-AI" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
