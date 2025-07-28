@@ -212,9 +212,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.querySelector('.typing-text');
   if (typingElement) {
     new TypeWriter(typingElement, [
-      'Data Science/AI Enthusiast',
+      'AI Engineer,
+      'Data Scientist'
       'Machine Learning Engineer',
       'Full Stack Developer',
+      'Data Analyst',
       'Problem Solver'
     ], 100);
   }
