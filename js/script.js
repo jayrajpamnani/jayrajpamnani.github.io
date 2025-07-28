@@ -198,12 +198,12 @@ class TypeWriter {
     }
     
     if (!this.isDeleting && this.currentCharIndex === currentText.length) {
-      typeSpeed = 1500; // Reduced pause at end from 2000 to 1500
+      typeSpeed = 1000; // Further reduced pause at end
       this.isDeleting = true;
     } else if (this.isDeleting && this.currentCharIndex === 0) {
       this.isDeleting = false;
       this.currentTextIndex = (this.currentTextIndex + 1) % this.texts.length;
-      typeSpeed = 300; // Reduced pause before starting new text from 500 to 300
+      typeSpeed = 200; // Further reduced pause before starting new text
     }
     
     setTimeout(() => this.type(), typeSpeed);
@@ -214,13 +214,16 @@ class TypeWriter {
 document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.querySelector('.typing-text');
   if (typingElement) {
-    new TypeWriter(typingElement, [
-      'AI Engineer',
-      'Data Scientist',
-      'Machine Learning Engineer',
-      'Full Stack Developer',
-      'Data Analyst'
-    ], 50); // Reduced speed from 100 to 50 for faster typing
+    // Start typing immediately
+    setTimeout(() => {
+      new TypeWriter(typingElement, [
+        'AI Engineer',
+        'Data Scientist',
+        'Machine Learning Engineer',
+        'Full Stack Developer',
+        'Data Analyst'
+      ], 30); // Even faster speed for immediate response
+    }, 100); // Small delay to ensure DOM is ready
   }
   
   // Ensure theme is properly initialized
