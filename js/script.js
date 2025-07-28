@@ -33,8 +33,6 @@ function switchTheme(e) {
   }
 }
 
-toggleSwitch.addEventListener("change", switchTheme, false);
-
 // Save user preference on load
 const currentTheme = localStorage.getItem("theme")
   ? localStorage.getItem("theme")
@@ -46,6 +44,11 @@ if (currentTheme) {
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
   }
+}
+
+// Add event listener after ensuring the element exists
+if (toggleSwitch) {
+  toggleSwitch.addEventListener("change", switchTheme, false);
 }
 
 // Sophisticated Scroll-triggered Animations
@@ -207,18 +210,27 @@ class TypeWriter {
   }
 }
 
-// Initialize typewriter effect
+// Initialize typewriter effect and theme
 document.addEventListener('DOMContentLoaded', () => {
   const typingElement = document.querySelector('.typing-text');
   if (typingElement) {
     new TypeWriter(typingElement, [
-      'AI Engineer,
-      'Data Scientist'
+      'AI Engineer',
+      'Data Scientist',
       'Machine Learning Engineer',
       'Full Stack Developer',
       'Data Analyst',
       'Problem Solver'
     ], 100);
+  }
+  
+  // Ensure theme is properly initialized
+  const currentTheme = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-theme", currentTheme);
+  
+  const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+  if (toggleSwitch) {
+    toggleSwitch.checked = currentTheme === "dark";
   }
 });
 

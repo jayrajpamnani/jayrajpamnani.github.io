@@ -47,6 +47,50 @@
   --shadow: 0 2px 10px rgba(95, 95, 95, 0.2);
 }
 
+/* Ensure dark mode styles are applied to all elements */
+[data-theme="dark"] body {
+  background: var(--bg-primary);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .navbar {
+  background: var(--bg-primary);
+}
+
+[data-theme="dark"] .nav-menu {
+  background: var(--bg-primary);
+}
+
+[data-theme="dark"] .bar {
+  background-color: var(--text-color);
+}
+
+[data-theme="dark"] .project-card {
+  background: var(--card-background);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .experience-card {
+  background: var(--card-background);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .hobby-card {
+  background: var(--card-background);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .strengths,
+[data-theme="dark"] .weaknesses {
+  background: var(--card-background);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .education-item {
+  background: var(--card-background);
+  color: var(--text-color);
+}
+
 html {
   font-size: 100%;
   scroll-behavior: smooth;
