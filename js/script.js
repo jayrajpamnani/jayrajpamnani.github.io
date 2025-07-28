@@ -194,16 +194,16 @@ class TypeWriter {
     let typeSpeed = this.speed;
     
     if (this.isDeleting) {
-      typeSpeed = this.speed * 0.8; // Faster deletion
+      typeSpeed = this.speed * 0.6; // Slower deletion for better readability
     }
     
     if (!this.isDeleting && this.currentCharIndex === currentText.length) {
-      typeSpeed = 1000; // Further reduced pause at end
+      typeSpeed = 2000; // Longer pause at end to read the text
       this.isDeleting = true;
     } else if (this.isDeleting && this.currentCharIndex === 0) {
       this.isDeleting = false;
       this.currentTextIndex = (this.currentTextIndex + 1) % this.texts.length;
-      typeSpeed = 200; // Further reduced pause before starting new text
+      typeSpeed = 500; // Longer pause before starting new text
     }
     
     setTimeout(() => this.type(), typeSpeed);
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Machine Learning Engineer',
         'Full Stack Developer',
         'Data Analyst'
-      ], 30); // Even faster speed for immediate response
+      ], 80); // Slower, more readable speed
     }, 100); // Small delay to ensure DOM is ready
   }
   
