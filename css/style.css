@@ -356,6 +356,8 @@ body {
   height: 100%;
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   transition: left 0.5s;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .enhanced-card:hover::before {
@@ -377,6 +379,8 @@ body {
   mask-composite: exclude;
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .enhanced-card:hover::after {
@@ -486,6 +490,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  z-index: 1;
 }
 
 .project-card:hover {
@@ -516,6 +522,9 @@ body {
   font-size: 0.8rem;
   margin-top: auto;
   padding: 0.4rem 0.75rem;
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .project-card .btn i {
