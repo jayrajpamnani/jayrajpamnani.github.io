@@ -110,7 +110,7 @@ class ParticleSystem {
     this.canvas.style.height = '100%';
     this.canvas.style.pointerEvents = 'none';
     this.canvas.style.zIndex = '-1';
-    this.canvas.style.opacity = '0.3';
+    this.canvas.style.opacity = '0.7';
     
     document.body.appendChild(this.canvas);
     this.resize();
@@ -136,8 +136,8 @@ class ParticleSystem {
         y: Math.random() * this.canvas.height,
         vx: (Math.random() - 0.5) * 0.5,
         vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 2 + 1,
-        opacity: Math.random() * 0.5 + 0.2
+        size: Math.random() * 3 + 2,
+        opacity: Math.random() * 0.5 + 0.5
       });
     }
   }
