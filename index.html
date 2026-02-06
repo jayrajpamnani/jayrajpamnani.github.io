@@ -4,402 +4,292 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
-    <title>Jayraj Pamnani Portfolio</title>
-    <meta name="title" content="Jayraj Pamnani Portfolio" />
-    <meta
-      name="description"
-      content="Portfolio website of Jayraj Pamnani, Data Science/AI Enthusiast."
-    />
+    <title>Jayraj Pamnani</title>
+    <meta name="title" content="Jayraj Pamnani" />
+    <meta name="description" content="Jayraj Pamnani — M.S. Computer Engineering, New York University. Machine Learning, Deep Learning, and AI Systems." />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://jayrajpamnani.github.io/" />
-    <meta property="og:title" content="Jayraj Pamnani Portfolio" />
-    <meta property="og:description" content="Portfolio website of Jayraj Pamnani, Data Science/AI Enthusiast." />
-    <meta property="og:image" content="https://jayrajpamnani.github.io/assets/thumbnail.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="Jayraj Pamnani" />
+    <meta property="og:description" content="M.S. Computer Engineering, New York University. ML, Deep Learning, and AI Systems." />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://jayrajpamnani.github.io/" />
-    <meta property="twitter:title" content="Jayraj Pamnani Portfolio" />
-    <meta property="twitter:description" content="Portfolio website of Jayraj Pamnani, Data Science/AI Enthusiast." />
-    <meta property="twitter:image" content="https://jayrajpamnani.github.io/assets/thumbnail.jpg" />
-
-    <!-- Link -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
-    />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
   </head>
-  <body class="no-js">
-    <header id="hero">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="#hero">
-              <img src="./assets/logo.jpg" alt="Jayraj M. Pamnani Logo" class="light-mode-logo" />
-              <img src="./assets/logo-black.jpg" alt="Jayraj M. Pamnani Logo" class="dark-mode-logo" />
-            </a>
-          </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#about">ABOUT</a></li>
-            <li><a class="nav-link" href="#skills">SKILLS</a></li>
-            <li><a class="nav-link" href="#experience">EXPERIENCE</a></li>
-            <li><a class="nav-link" href="#education">EDUCATION</a></li>
-            <li><a class="nav-link" href="#certifications">CERTIFICATIONS</a></li>
-            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#other">OTHER</a></li>
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="Resume_ML.pdf"
-                target="_blank"
-                >RESUME <i class="fas fa-arrow-right"></i
-              ></a>
-            </li>
-            <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
-            </div>
-            <!-- Hamburger menu -->
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </div>
-      </nav>
-
-      <div class="announcement-bar">
-        <p>Lately, I've been reaching out to professionals across the industry through cold emails. If you're one of the people I contacted and you've landed here through the link in my email signature — thank you! I truly appreciate you taking the time to visit. It means a lot to me.</p>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-inner">
+        <a href="#" class="nav-name">Jayraj Pamnani</a>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="Resume_ML.pdf" target="_blank">Resume</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+              <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </li>
+        </ul>
       </div>
+    </nav>
 
-      <section class="header-container">
-        <img
-          class="profile-image"
-          src="assets/jayraj-profile.jpg"
-          alt="Jayraj M. Pamnani"
-        />
-        <h1>Hi!! I'm Jayraj Pamnani</h1>
+    <!-- Main Content -->
+    <main class="container">
 
-        <div class="content-text">
-          <h2 class="typing-text">Data Science/AI Enthusiast</h2>
+      <!-- Header / Hero -->
+      <header class="hero" id="hero">
+        <div class="hero-text">
+          <h1>Jayraj Pamnani</h1>
+          <p class="subtitle">M.S. Computer Engineering, New York University</p>
+          <p class="affiliation">Tandon School of Engineering &middot; Expected May 2026</p>
         </div>
-        <div class="social-links">
-          <a href="mailto:jmp10051@nyu.edu" title="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/jayrajpamnani" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/jayrajpamnani" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.coursera.org/account-profile" target="_blank" title="Coursera"><i class="fas fa-graduation-cap"></i></a>
+        <div class="hero-photo">
+          <img src="assets/jayraj-profile.jpg" alt="Jayraj Pamnani" />
         </div>
-        <a
-          href="Resume_ML.pdf"
-          class="btn btn-secondary"
-          target="_blank"
-          >Download Resume</a
-        >
-      </section>
-      <!-- About Me Section -->
-      <section id="about" class="about-container container">
-        <div class="content-text">
-          <h2>About Me</h2>
-          <p>
-            I'm Jayraj, a Computer Engineering student who loves working with Machine Learning and building software. I create smart computer programs that use both good coding and AI technology.
-            <br><br>
-            I've built and launched apps that use advanced AI tools like language models, image recognition, and data processing. I focus on taking information and turning it into useful AI solutions that actually work. I can build both the AI brain and the computer system that runs it. I keep learning about how good software and AI can work together to build smarter systems.
-            <br><br>
-            Also, a quick personal note: you'll notice some eagle themes around this site. That's because the eagle is my favorite bird. When it starts getting older and weaker, it goes to a mountain, breaks its own beak, pulls out its feathers, and patiently rebuilds itself—stronger than ever. That really stuck with me. It reminds me that sometimes, we have to make tough choices and go through discomfort if we want to grow and reach new heights.
-          </p>
-        </div>
-      </section>
-      <!-- Skills Section -->
-      <section id="skills" class="skills-container container">
-        <div class="content-text">
-          <h2>Skills</h2>
-          <ul>
-            <li><strong>Machine Learning & AI:</strong>  RAG, VLMs, LLMs, LangChain, Scikit-learn, TensorFlow, Keras, PyTorch, Coqui TTS/STT, OpenAI Whisper, Random Forest, Decision Trees, Clustering, Regression, NLP (Sentiment Analysis, Text Classification), Deep Learning, Computer Vision</li>
-            <li><strong>LLMs:</strong> Gemini-flash-2.0, Phi-2, CodeLlama-7B, Mistral-7B, Llama2, Zephyr, CodeGen, BERT, CodeGemma</li>
-            <li><strong>Big Data & Databases:</strong> Hadoop, Apache Spark, Hive, BigQuery, PostgreSQL, MongoDB, SQL, Oracle Data Modeler, MySQL</li>
-            <li><strong>Programming Languages:</strong> Python, R, Java, JavaScript, C++, SQL, MATLAB, TypeScript, Bash</li>
-            <li><strong>Data Analysis & Visualization:</strong> Pandas, NumPy, Matplotlib, Seaborn, SciPy, Tableau, R (data wrangling, visualization, statistical analysis), PowerBI, Excel, SAS</li>
-            <li><strong>Platforms:</strong> VSCode, Github, Ollama, HuggingFace, AWS, Google Cloud, Kubernetes, Docker, Azure, Google AI Studio, N8n</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Experience Section -->
-      <section id="experience" class="experience-container container">
-        <div class="content-text">
-          <h2>Professional Experience</h2>
-          <div class="experience-cards">
-            <div class="experience-card enhanced-card fade-in">
-              <i class="fas fa-plane"></i>
-              <h3>GBCS Group - Software Architect Intern</h3>
-              <div class="exp-meta">
-                <span class="exp-location">Calgary, Canada</span> |
-                <span class="exp-date">Nov. 2025 - Present</span>
-              </div>
-              <ul>
-                <li>Currently architecting the real-time data integration layer for the Orion-Duo platform, synchronizing telemetry between aircraft sensors and ground operations to reduce data latency by 30%.</li>
-                <li>Leading the structural redesign of the Komet flight data engine, transitioning legacy manual processes into an automated Machine Learning pipeline that has improved data ingestion accuracy by 25%.</li>
-                <li>Developing a microservices-based blueprint for the Orion lifecycle management platform, ensuring the system can scale to handle 1,000+ global aviation assets while reducing cloud overhead by 20%.</li>
-                <li>Authoring comprehensive Architecture Decision Records (ADRs) and security frameworks for multi-tenant aviation environments, ensuring all designs meet strict international aerospace data compliance standards.</li>
-              </ul>
-            </div>
-            <div class="experience-card enhanced-card fade-in">
-              <i class="fas fa-university"></i>
-              <h3>New York University - Graduate Assistant</h3>
-              <div class="exp-meta">
-                <span class="exp-location">New York, New York, United States</span> |
-                <span class="exp-date">Sep. 2025 - Present</span>
-              </div>
-              <ul>
-                <li>Oversee day-to-day operations of the CSE department, managing classroom schedules, laboratory access, resource allocation, and resolving operational challenges to ensure uninterrupted academic activities.</li>
-                <li>Coordinate departmental events, seminars, workshops, and administrative processes including meeting scheduling, documentation, and correspondence to maintain efficient workflows and timely completion of objectives.</li>
-                <li>Facilitate communication between students, faculty, and administration while managing departmental resources, inventory, budget allocation, and ensuring compliance with institutional policies and accreditation requirements.</li>
-              </ul>
-            </div>
-            <div class="experience-card enhanced-card fade-in">
-              <i class="fas fa-robot"></i>
-              <h3>Swaroop.ai - AI Intern</h3>
-              <div class="exp-meta">
-                <span class="exp-location">Ahmedabad, India</span> |
-                <span class="exp-date">Mar. 2024 - Aug. 2024</span>
-              </div>
-              <ul>
-                <li>Enhanced Text-to-Speech model performance by 25% through fine-tuning Coqui TTS across multiple Indian languages, optimizing real-time synthesis pipelines.</li>
-                <li>Improved Speech-to-Text accuracy by 18% by refining Coqui STT models with domain-specific audio datasets and custom preprocessing scripts.</li>
-                <li>Integrated OpenAI Whisper into the production workflow, increasing transcription accuracy on noisy datasets by 30% and cutting inference latency by 20%.</li>
-                <li>Contributed to the end-to-end AI pipeline (data cleaning, model training, deployment), helping reduce model turnaround time from 3 days to under 24 hours.</li>
-              </ul>
-            </div>
-            <div class="experience-card enhanced-card fade-in">
-              <i class="fas fa-chart-line"></i>
-              <h3>Robotskull - Data Scientist Intern</h3>
-              <div class="exp-meta">
-                <span class="exp-location">Vadodara, India</span> |
-                <span class="exp-date">Oct. 2023 – Mar. 2024</span>
-              </div>
-              <ul>
-                <li>Processed and standardized 100K+ sales and inventory records, improving data accessibility and analysis speed by 40%.</li>
-                <li>Built demand forecasting models that achieved 92% prediction accuracy, driving 15% more efficient inventory restocking decisions.</li>
-                <li>Automated weekly analytics dashboards for the procurement team, reducing manual reporting time by 70%.</li>
-                <li>Identified top 10 high-demand SKUs, directly influencing procurement priorities and saving ~10% in inventory holding costs.</li>
-              </ul>
-            </div>
-            <div class="experience-card enhanced-card fade-in">
-              <i class="fas fa-code"></i>
-              <h3>Freelance Software Developer</h3>
-              <div class="exp-meta">
-                <span class="exp-location">Vadodara, India</span> |
-                <span class="exp-date">Jul. 2023 – Sept. 2023</span>
-              </div>
-              <ul>
-                <li>Engineered and deployed a Django-based web app that automated data transfer between QuickBooks and KatanaMRP, cutting the client's manual bookkeeping workload by ~85%.</li>
-                <li>Built a robust REST API integration using Django (backend) and JavaScript (frontend), enabling seamless synchronization of 10,000+ financial and inventory records with zero data loss.</li>
-              </ul>
-            </div>
-            <div class="experience-card enhanced-card fade-in">
-              <i class="fas fa-chalkboard-teacher"></i>
-              <h3>Parul University - Teaching Assistant</h3>
-              <div class="exp-meta">
-                <span class="exp-location">Vadodara, India</span> |
-                <span class="exp-date">Oct. 2022 - Mar. 2023</span>
-              </div>
-              <ul>
-                <li>Supported 120+ students in mastering OS concepts and C-based system programming, leading to a 15% increase in average lab scores.</li>
-                <li>Conducted weekly lab sessions, clarified student doubts, graded assignments and projects, and supported students in understanding Linux system programming and multithreading using C.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Education Section -->
-      <section id="education" class="education-container container">
-        <div class="content-text">
-          <h2>Education</h2>
-          <div class="education-item">
-            <h3>New York University</h3>
-            <p><strong>Master's in Computer Engineering</strong> | New York, NY | Expected May 2026</p>
-            <p><em>Relevant Coursework:</em> High Performance Machine Learning, Machine Learning Operations, Deep Learning, Database Systems, Big Data</p>
-          </div>
-          <div class="education-item">
-            <h3>Parul University</h3>
-            <p><strong>Bachelor's in Computer Science & Engineering with Specialization in AI</strong> | Vadodara, India | May 2024</p>
-            <p><em>Relevant Coursework:</em> Data Structures & Algorithms, Machine Learning, Deep Learning with NLP, Pattern Recognition, Image Processing, GPU Computing, Data Visualization and Data Analytics</p>
-          </div>
-        </div>
-      </section>
-      <!-- Certifications Section -->
-      <section id="certifications" class="certifications-container container">
-        <div class="content-text">
-          <h2>Certifications</h2>
-          <ul>
-            <li><strong>Deep Learning Specialization by Andrew Ng (5 Course Series)</strong> &mdash; Neural Networks, Hyperparameter Tuning, CNN, RNN (3 months)</li>
-            <li><strong>Google Data Analytics Professional Certificate (8 Course Series)</strong> &mdash; Data Cleaning, Visualization, Statistical Analysis (2 months)</li>
-            <li><strong>Microsoft Azure AI Fundamentals</strong> &mdash; AI Services, Machine Learning, Cognitive Services, Computer Vision, Natural Language Processing, Conversational AI (1 month)</li>
-            <li><strong>Microsoft Security, Compliance, and Identity Fundamentals</strong> &mdash; Azure Active Directory, Identity Protection, Security Center, Compliance Manager, Information Protection, Threat Protection (1 month)</li>
-            <li><strong>Microsoft Azure Data Fundamentals</strong> &mdash; Azure SQL Database, Cosmos DB, Data Factory, Synapse Analytics, Data Lake Storage, Stream Analytics (1 month)</li>
-            <li><strong>Microsoft Power Platform Fundamentals</strong> &mdash; Power BI, Power Apps, Power Automate, Power Virtual Agents, Dataverse, Business Process Automation (1 month)</li>
-          </ul>
-        </div>
-      </section>
-    </header>
+      </header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-      <div class="content-text">
-        <h2>Projects</h2>
-        <div class="projects-container">
-          <div class="project-card enhanced-card fade-in">
-            <h3>EyeConnect | WebRTC, Supabase, OpenRouter AI, React, TypeScript</h3>
-            <p>Accessibility platform connecting blind users with sighted volunteers via WebRTC video calls and AI-powered vision assistance; awarded 2nd place at NYU Hacks 2025.</p>
-            <a href="https://github.com/jayrajpamnani/EyeConnect" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="project-card enhanced-card fade-in">
-            <h3>ViT Optimization | PyTorch, bitsandbytes, FlashAttention-2, LoRA</h3>
-            <p>Optimized Vision Transformer (ViT-L/16) using 4-bit/8-bit quantization and FlashAttention-2, achieving 4× model size reduction and 40% lower latency with minimal accuracy loss.</p>
-            <a href="https://github.com/jayrajpamnani/Vision-Model-Optimization-with-Quantization-Efficient-Attention" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="project-card enhanced-card fade-in">
-            <h3>Model Merging (LLMs) | Python, PyTorch, Hugging Face, Google Colab</h3>
-            <p>Implemented advanced LLM merging techniques (TIES, SLERP) to combine Mistral-7B variants with optimized hyperparameters for cross-task performance.</p>
-            <a href="https://github.com/jayrajpamnani/Deep_Learning_Project" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="project-card enhanced-card fade-in">
-            <h3>Chapter | Python (Django), Oracle Data Modeler, HTML, CSS, JS, Oracle</h3>
-            <p>Secure library management web app with role-based authentication, SQL-injection protection, and an employee dashboard for business metrics.</p>
-            <a href="https://github.com/jayrajpamnani/Chapter" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="project-card enhanced-card fade-in">
-            <h3>Command Line Helper</h3>
-            <p>Converts natural language to bash commands using a local LLM and RAG-powered context, with both CLI and web interface.</p>
-            <a href="https://github.com/jayrajpamnani/CommandLineHelper" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
-          </div>
-          <div class="project-card enhanced-card fade-in">
-            <h3>HexDrop</h3>
-            <p>File delivery web app which helps users to share files across devices with end to end encryption.</p>
-            <a href="https://github.com/jayrajpamnani/HexDrop" class="btn btn-secondary" target="_blank">View on GitHub <i class="fas fa-arrow-right"></i></a>
-          </div>
-        </div>
-        <div class="see-all-projects">
-          <a href="https://github.com/jayrajpamnani?tab=repositories" class="btn" target="_blank">See All on GitHub <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
+      <hr />
 
-    <!-- Strengths and Weaknesses Section -->
-    <section id="other" class="container">
-      <div class="content-text">
-        <h2>Strengths and Weaknesses</h2>
-        <div class="sw-container">
-          <div class="strengths">
-            <h3>Strengths</h3>
-            <ul>
-              <li>I enjoy building and creating things from the ground up</li>
-              <li>I'm a strong problem-solver and like finding smart, efficient solutions</li>
-              <li>I stay focused and committed to one task at a time until it's done</li>
-              <li>I pay attention to detail and care about the quality of my work</li>
-            </ul>
-          </div>
-          <div class="weaknesses">
-            <h3>Weaknesses</h3>
-            <p class="subtitle">Things I am working on</p>
-            <ul>
-              <li>I sometimes focus too much on one task, which makes context switching hard</li>
-              <li>I can be a perfectionist and spend extra time refining small details</li>
-              <li>I often take on too much solo and delay asking for feedback or help</li>
-              <li>I sometimes jump into solving problems too quickly without fully exploring them</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Hobbies Section -->
-    <section id="hobbies" class="container">
-      <div class="content-text">
-        <h2>Hobbies</h2>
-        <div class="hobbies-container">
-          <div class="hobby-card">
-            <i class="fas fa-puzzle-piece"></i>
-            <h3>Playing Sudoku</h3>
-            <p>Master level on the Sudoku.com app</p>
-          </div>
-          <div class="hobby-card">
-            <i class="fas fa-bicycle"></i>
-            <h3>Cycling</h3>
-            <p>To relax and stay active</p>
-          </div>
-          <div class="hobby-card">
-            <i class="fas fa-film"></i>
-            <h3>Watching Movies</h3>
-            <p>Mostly comedy and inspiring ones</p>
-          </div>
-          <div class="hobby-card">
-            <i class="fas fa-laugh-squint"></i>
-            <h3>Memes</h3>
-            <p>Yes, including dank ones</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <div class="container">
-        <h3 class="footer-heading">Get in Touch</h3>
+      <!-- Contact -->
+      <section class="contact-bar">
         <a href="mailto:jmp10051@nyu.edu">jmp10051@nyu.edu</a>
-        <!-- Social links -->
-        <div class="social">
-          <a href="https://www.linkedin.com/in/jayrajpamnani" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Linkedin" /></a>
-          <a href="https://github.com/jayrajpamnani" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        <span class="sep">&middot;</span>
+        <a href="https://www.linkedin.com/in/jayrajpamnani" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="sep">&middot;</span>
+        <a href="https://github.com/jayrajpamnani" target="_blank" rel="noopener">GitHub</a>
+        <span class="sep">&middot;</span>
+        <a href="Resume_ML.pdf" target="_blank">Resume</a>
+      </section>
+
+      <hr />
+
+      <!-- 1. About -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a graduate student in Computer Engineering at New York University's Tandon School of Engineering. My work sits at the intersection of machine learning, deep learning, and systems engineering. I build and optimize AI pipelines&mdash;from model training and quantization to deployment&mdash;with a focus on making large-scale models practical and efficient.
+        </p>
+        <p>
+          Prior to NYU, I completed my B.Tech. in Computer Science &amp; Engineering with a specialization in Artificial Intelligence at Parul University (India), where I developed a strong foundation in data structures, pattern recognition, and GPU computing.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 2. Education -->
+      <section id="education">
+        <h2>Education</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>M.S. Computer Engineering</strong> &mdash; New York University, Tandon School of Engineering
+            <span class="entry-date">Expected May 2026</span>
+          </div>
+          <p class="coursework">Coursework: High Performance Machine Learning, Machine Learning Operations, Deep Learning, Database Systems, Big Data.</p>
         </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>B.Tech. Computer Science &amp; Engineering (AI Specialization)</strong> &mdash; Parul University, India
+            <span class="entry-date">May 2024</span>
+          </div>
+          <p class="coursework">Coursework: Data Structures &amp; Algorithms, Machine Learning, Deep Learning with NLP, Pattern Recognition, Image Processing, GPU Computing, Data Visualization.</p>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 3. Skills -->
+      <section id="skills">
+        <h2>Technical Skills</h2>
+        <dl class="skills-list">
+          <dt>Languages</dt>
+          <dd>Python, SQL, C/C++, Java, JavaScript</dd>
+
+          <dt>ML/AI Frameworks</dt>
+          <dd>TensorFlow, PyTorch, Matplotlib, Seaborn, Scikit-learn, Neural Networks, Computer Vision, NLP</dd>
+
+          <dt>Data &amp; Cloud</dt>
+          <dd>Distributed Systems, AWS, CI/CD, MongoDB, PostgreSQL, Hadoop, Spark, ETL Pipelines, Tableau Dashboards</dd>
+
+          <dt>Tools</dt>
+          <dd>Git, Docker, Kubernetes, Jupyter, Gradio, Hugging Face, WandB, n8n, Postman, LangChain</dd>
+        </dl>
+      </section>
+
+      <hr />
+
+      <!-- 4. Experience -->
+      <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>Software Architect Intern</strong> &mdash; GBCS Group, Calgary, Canada
+            <span class="entry-date">Nov 2025 &ndash; Present</span>
+          </div>
+          <ul>
+            <li>Spearheaded the architectural optimization of the group&rsquo;s software ecosystem, implementing resource efficiency strategies that reduced hosting and maintenance costs by 28%.</li>
+            <li>Reengineered automated CI/CD pipelines and deployment workflows, accelerating release cycles by 40% while ensuring 99.9% system availability.</li>
+            <li>Defined technical standards and architectural roadmaps, guiding development teams in building scalable microservices that reduced technical debt and improved maintainability by 30%.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>Teaching Assistant &mdash; Machine Learning</strong> &mdash; New York University, New York, NY
+            <span class="entry-date">Sep 2025 &ndash; Dec 2025</span>
+          </div>
+          <ul>
+            <li>Guided 50+ graduate students through ML fundamentals, including preprocessing pipelining, supervised/unsupervised learning, Deep Learning, and model optimization techniques.</li>
+            <li>Conducted weekly office hours to debug Python code, explained algorithms, taught ML topics, and assisted with PyTorch implementations.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>AI Intern</strong> &mdash; Swaroop.ai, Ahmedabad, India
+            <span class="entry-date">Mar 2024 &ndash; Aug 2024</span>
+          </div>
+          <ul>
+            <li>Enhanced TTS model performance by 25% through fine-tuning Coqui TTS across multiple Indian languages.</li>
+            <li>Improved STT accuracy by 18% via domain-specific audio datasets and custom preprocessing.</li>
+            <li>Integrated OpenAI Whisper into production, increasing transcription accuracy on noisy data by 30% and cutting inference latency by 20%.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>Data Scientist Intern</strong> &mdash; Robotskull, Vadodara, India
+            <span class="entry-date">Oct 2023 &ndash; Mar 2024</span>
+          </div>
+          <ul>
+            <li>Processed 100K+ sales and inventory records; built demand forecasting models achieving 92% prediction accuracy.</li>
+            <li>Automated weekly analytics dashboards, reducing manual reporting time by 70%.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>Freelance Software Developer</strong> &mdash; Vadodara, India
+            <span class="entry-date">Jul 2023 &ndash; Sep 2023</span>
+          </div>
+          <ul>
+            <li>Engineered a Django-based web app automating data transfer between QuickBooks and KatanaMRP, cutting manual bookkeeping by ~85%.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <strong>Teaching Assistant</strong> &mdash; Parul University, Vadodara, India
+            <span class="entry-date">Oct 2022 &ndash; Mar 2023</span>
+          </div>
+          <ul>
+            <li>Supported 120+ students in OS concepts and C-based system programming; led weekly lab sessions on Linux programming and multithreading.</li>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 5. Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <ol class="pub-list" reversed>
+          <li>
+            <strong>HexDrop (Secure File Transfer)</strong><br />
+            Next.js, TypeScript, Prisma, PostgreSQL, AWS, Docker, K8s.<br />
+            <em>This secure file-sharing application enables encrypted uploads and key-based downloads using AWS S3 and PostgreSQL.</em><br />
+            <em>The platform operates on a full-stack DevOps pipeline featuring EKS orchestration, automated CI/CD, and scalable cloud infrastructure.</em><br />
+            <a href="https://github.com/jayrajpamnani/HexDrop" target="_blank">[code]</a>
+          </li>
+          <li>
+            <strong>EyeConnect: Accessible Video Communication with AI-Powered Vision Assistance</strong><br />
+            WebRTC, Supabase, OpenRouter AI, React, TypeScript.<br />
+            <em>Accessibility platform connecting blind users with sighted volunteers via real-time video calls and AI vision assistance. Awarded 2nd place at NYU Hacks 2025.</em><br />
+            <a href="https://github.com/jayrajpamnani/EyeConnect" target="_blank">[code]</a>
+          </li>
+          <li>
+            <strong>Vision Transformer Optimization via Quantization &amp; Efficient Attention</strong><br />
+            PyTorch, bitsandbytes, FlashAttention-2, LoRA.<br />
+            <em>Optimized ViT-L/16 using 4-bit/8-bit quantization and FlashAttention-2, achieving 4&times; model size reduction and 40% lower latency with minimal accuracy loss.</em><br />
+            <a href="https://github.com/jayrajpamnani/Vision-Model-Optimization-with-Quantization-Efficient-Attention" target="_blank">[code]</a>
+          </li>
+          <li>
+            <strong>Model Merging for Large Language Models</strong><br />
+            Python, PyTorch, Hugging Face, Google Colab.<br />
+            <em>Implemented TIES and SLERP merging techniques to combine Mistral-7B variants with optimized hyperparameters for cross-task generalization.</em><br />
+            <a href="https://github.com/jayrajpamnani/Deep_Learning_Project" target="_blank">[code]</a>
+          </li>
+          <li>
+            <strong>Command Line Helper: Natural Language to Bash via Local LLM</strong><br />
+            <em>Converts natural-language instructions into bash commands using a local LLM and RAG-powered context retrieval, with both CLI and web interfaces.</em><br />
+            <a href="https://github.com/jayrajpamnani/CommandLineHelper" target="_blank">[code]</a>
+          </li>
+          <li>
+            <strong>Chapter: Secure Library Management System</strong><br />
+            Python (Django), Oracle Data Modeler, HTML/CSS/JS, Oracle DB.<br />
+            <em>Library management web application with role-based authentication, SQL-injection protection, and an employee dashboard for business metrics.</em><br />
+            <a href="https://github.com/jayrajpamnani/Chapter" target="_blank">[code]</a>
+          </li>
+        </ol>
+        <p class="muted">
+          A full list of repositories is available on <a href="https://github.com/jayrajpamnani?tab=repositories" target="_blank">GitHub</a>.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- 6. Certifications -->
+      <section id="certifications">
+        <h2>Selected Certifications</h2>
+        <ul>
+          <li><strong>Deep Learning Specialization</strong> &mdash; Andrew Ng / Coursera (5-course series)</li>
+          <li><strong>Google Data Analytics Professional Certificate</strong> &mdash; Coursera (8-course series)</li>
+          <li><strong>Microsoft Azure AI Fundamentals</strong> (AI-900)</li>
+          <li><strong>Microsoft Azure Data Fundamentals</strong> (DP-900)</li>
+          <li><strong>Microsoft Security, Compliance, and Identity Fundamentals</strong> (SC-900)</li>
+          <li><strong>Microsoft Power Platform Fundamentals</strong> (PL-900)</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>
+          Jayraj Pamnani &middot;
+          <a href="mailto:jmp10051@nyu.edu">jmp10051@nyu.edu</a> &middot;
+          <a href="https://github.com/jayrajpamnani" target="_blank" rel="noopener">GitHub</a> &middot;
+          <a href="https://www.linkedin.com/in/jayrajpamnani" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
       </div>
     </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
