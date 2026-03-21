@@ -149,6 +149,23 @@ li {
   border-bottom: 1px solid var(--border);
 }
 
+/* --- Announcement Bar --- */
+.announcement-bar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+.announcement-bar p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--fg-muted);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
 .nav-inner {
   max-width: var(--max-width);
   margin: 0 auto;
