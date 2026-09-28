@@ -303,7 +303,7 @@ li {
 /* --- Hero / Header --- */
 .hero {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   padding-top: 2.5rem;
   padding-bottom: 0.5rem;
